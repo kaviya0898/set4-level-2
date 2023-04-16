@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+		int n=1000;
+		StringBuilder sb=new StringBuilder();
+		while(n>0)
+		{
+			int rem=(n-1)%26;
+		
+			char temp=(char)('A'+rem);
+			sb.append(temp);
+			n=(n-1)/26;
+		}
+		System.out.println(sb);
+	}
