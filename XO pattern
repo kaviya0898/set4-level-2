@@ -1,0 +1,43 @@
+public static void main(String[] args) {
+		int n=3,m=3;
+		char array[][]=new char[m][n];
+		char x='x';
+		int first=0;
+		
+		while(m!=0)
+		{
+		for(int i=first;i<m;i++)
+		{
+			for(int j=first;j<n;j++)
+			{
+				array[i][j]=x;
+			}
+			
+		}
+		if(x=='x')
+		{
+			x='0';
+		}
+		else
+		{
+			x='x';
+		}
+		first++;
+		m--;
+		n--;
+		}
+		m=3;
+		n=3;
+		for(int i=0;i<m;i++)
+		{
+			for(int j=0;j<n;j++)
+			{
+				System.out.print(array[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+  
+	
+	}
